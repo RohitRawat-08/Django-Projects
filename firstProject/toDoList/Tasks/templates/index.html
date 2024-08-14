@@ -12,8 +12,10 @@
 
 
             <div>
-                <button><a href="{% url 'edit' i.id %}">Edit</a></button>
-                <button onclick="alert('are you sure?')">
+                <button>
+                    <a href="{% url 'edit' i.id %}">Edit</a>
+                </button>
+                <button>
                     <a href="{% url 'delete' i.id %}">Delete</a>
                 </button>
             </div>
