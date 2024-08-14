@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div>
+    
+    {% for i in data %}
+
+        <div>
+            <h1>{{i.Task}}</h1>
+            <p>{{i.desc}}</p>
+        </div>
+
+    {% endfor %}
+
+</div>
+
+
+
+{% endblock content %}
