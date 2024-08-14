@@ -9,7 +9,19 @@
         <div class="TaskMainContent">
             <h1>{{i.Task}}</h1>
             <p>{{i.desc}}</p>
+
+
+            <div>
+                <button><a href="{% url 'edit' i.id %}">Edit</a></button>
+                <button onclick="alert('are you sure?')">
+                    <a href="{% url 'delete' i.id %}">Delete</a>
+                </button>
+            </div>
+
+            
         </div>
+
+        
 
     {% endfor %}
 
