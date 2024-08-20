@@ -5,5 +5,44 @@
 }
 
 body { 
-    background-color: rgb(4, 60, 109);
+    background-color: rgb(238, 243, 248);
+}
+
+
+.dham{
+    font-size: larger;
+    text-align: center;
+    padding-top: 30px;
+    color: black;
+    text-decoration: underline;
+}
+
+.DhamImages{
+    height: 450px;
+    /* display: grid; */
+    display: flex;
+    /* grid-template-columns: repeat(1,auto); */
+    /* grid-template-rows: repeat(1,auto); */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: solid red; */
+}
+
+.DhamImages img{
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.DhamImages div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: solid red; */
+}
+.DhamImages div span:last-child{
+    font-size: larger;
+    font-weight: 500;
 }
