@@ -2,7 +2,62 @@
 
 {% block content%}
  
-{% include 'img.html' %}
 
+<!-- <div class="DhamImages">
+    <div>
+        <span>
+           
+           <a href="{% url 'display' %}"><img src="../static/images/Kedarnath.jpg" alt=""></a> 
+        </span>
+        <span>Kedarnath</span>
+    </div>
+
+    <div>
+        <span>
+            
+            <a href="{% url 'display' %}"><img src="../static/images/badrinath.jpeg" alt=""></a>
+        </span>
+        <span>Badrinath</span>
+    </div>
+
+    <div>
+        <span>
+            
+            <a href="{% url 'display' %}"><img src="../static/images/OIP.jpeg" alt=""></a>
+        </span>
+        <span>Gangotri</span>
+    </div>
+
+    <div>
+        <span>
+            
+            <a href= "{% url 'display' %}"><img src="../static/images/yamnotri.webp" alt=""></a>
+        </span>
+        <span>
+            Yamunotri
+        </span>
+    </div>
+
+</div> -->
+
+
+<div class="DhamImages">
+
+    
+    {% for i in data%}
+        
+    <div>
+        <span>
+           <a href="{% url 'display' %}"><img src="/media/{{i.blog_img}}" alt=""></a> 
+            
+        </span>
+
+        <span>{{i.Place}}</span>
+
+    </div>
+
+    {% endfor %}
+
+</div> 
 
 {% endblock %}

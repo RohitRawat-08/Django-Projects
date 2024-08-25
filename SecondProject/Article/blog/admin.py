@@ -5,7 +5,7 @@ from blog.models import DataBase
 # Register your models here.
 
 class DataBaseAdmin(admin.ModelAdmin):
-    list_display=['id','Place','description']
+    list_display=['id','Place','description','blog_img']
 
 
 admin.site.register(DataBase,DataBaseAdmin)
