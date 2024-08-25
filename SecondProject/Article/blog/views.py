@@ -9,13 +9,11 @@ def home(request):
     return render(request, "home.html",context)
 
 
-def display(request):
-    return render(request,"display.html")
+def display(request,id):
+    blog = DataBase.objects.get(id = id)
+    context = {'value': blog}
+    return render(request,"display.html",context)
 
 
 
 
-# def index(request):
-#     blog=Article.objects.all()
-#     context={'data':blog}
-#     return render(request,'index.html',context)
