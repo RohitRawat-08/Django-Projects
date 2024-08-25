@@ -2,10 +2,18 @@
 
 {% block content%}
  
-<!-- <h1>hello</h1> -->
+    <div class="displayCont">
 
-    <div>{{value.Place}}</div>  <br><br>
-    <div>{{value.description}}</div>
+        <div class="content">
+            <div class="title">{{value.Place}}</div>  
+            <div class="desc">{{value.description}}</div>
+        </div>
+
+        <div class="image" ><img src="/media/{{value.blog_img}}" alt=""></div>
+
+    
+    </div>
+
 
 
 {% endblock %}
